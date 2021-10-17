@@ -34,6 +34,9 @@ tracks/0/keys = {
 "values": [ Vector3( 0, 0, 0 ), Vector3( 0, -360, 0 ) ]
 }
 
+[sub_resource type="OccluderShapeSphere" id=3]
+spheres = [ Plane( 0, -22.326, 0, 11.661 ), Plane( 52.489, -7.5, 75.657, 4.5 ), Plane( 36.628, -4.828, 92.5, 4 ), Plane( -17.415, -4.017, 88.384, 12 ), Plane( 69.656, -2.014, 71, 4 ), Plane( 85.091, -11.5, 6.42, 8 ), Plane( 27.881, -13.9, 8.221, 8 ), Plane( -21.687, -13.9, 19.99, 8 ), Plane( -5.906, -13.9, -28.228, 8 ) ]
+
 [node name="Level" type="Spatial"]
 script = ExtResource( 1 )
 
@@ -146,3 +149,6 @@ script = ExtResource( 9 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Occluder" type="Occluder" parent="."]
+shape = SubResource( 3 )

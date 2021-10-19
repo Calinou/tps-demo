@@ -17,15 +17,6 @@ func _ready():
 	else:
 		get_viewport().msaa = Viewport.MSAA_DISABLED
 
-	if Settings.ssao_quality == Settings.SSAOQuality.HIGH:
-		world_environment.environment.ssao_enabled = true
-		world_environment.environment.ssao_quality = world_environment.environment.SSAO_QUALITY_HIGH
-	elif Settings.ssao_quality == Settings.SSAOQuality.LOW:
-		world_environment.environment.ssao_enabled = true
-		world_environment.environment.ssao_quality = world_environment.environment.SSAO_QUALITY_LOW
-	else:
-		world_environment.environment.ssao_enabled = false
-
 	if Settings.bloom_quality == Settings.BloomQuality.HIGH:
 		world_environment.environment.glow_enabled = true
 		world_environment.environment.glow_bicubic_upscale = true

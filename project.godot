@@ -217,6 +217,7 @@ toggle_debug={
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 vram_compression/import_etc2=false
 quality/shadow_atlas/size=2048
 quality/filters/msaa=2

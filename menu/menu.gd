@@ -24,11 +24,6 @@ onready var aa_4x = aa_menu.get_node(@"4X")
 onready var aa_2x = aa_menu.get_node(@"2X")
 onready var aa_disabled = aa_menu.get_node(@"Disabled")
 
-onready var ssao_menu = settings_menu.get_node(@"SSAO")
-onready var ssao_high = ssao_menu.get_node(@"High")
-onready var ssao_low = ssao_menu.get_node(@"Low")
-onready var ssao_disabled = ssao_menu.get_node(@"Disabled")
-
 onready var bloom_menu = settings_menu.get_node(@"Bloom")
 onready var bloom_high = bloom_menu.get_node(@"High")
 onready var bloom_low = bloom_menu.get_node(@"Low")
@@ -112,13 +107,6 @@ func _on_settings_pressed():
 	elif Settings.aa_quality == Settings.AAQuality.DISABLED:
 		aa_disabled.pressed = true
 
-	if Settings.ssao_quality == Settings.SSAOQuality.HIGH:
-		ssao_high.pressed = true
-	elif Settings.ssao_quality == Settings.SSAOQuality.LOW:
-		ssao_low.pressed = true
-	elif Settings.ssao_quality == Settings.SSAOQuality.DISABLED:
-		ssao_disabled.pressed = true
-
 	if Settings.bloom_quality == Settings.BloomQuality.HIGH:
 		bloom_high.pressed = true
 	elif Settings.bloom_quality == Settings.BloomQuality.LOW:
@@ -158,13 +146,6 @@ func _on_apply_pressed():
 		Settings.aa_quality = Settings.AAQuality.AA_2X
 	elif aa_disabled.pressed:
 		Settings.aa_quality = Settings.AAQuality.DISABLED
-
-	if ssao_high.pressed:
-		Settings.ssao_quality = Settings.SSAOQuality.HIGH
-	elif ssao_low.pressed:
-		Settings.ssao_quality = Settings.SSAOQuality.LOW
-	elif ssao_disabled.pressed:
-		Settings.ssao_quality = Settings.SSAOQuality.DISABLED
 
 	if bloom_high.pressed:
 		Settings.bloom_quality = Settings.BloomQuality.HIGH

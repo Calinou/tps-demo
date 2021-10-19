@@ -7,12 +7,6 @@ enum AAQuality {
 	AA_8X = 3,
 }
 
-enum SSAOQuality {
-	DISABLED = 0,
-	LOW = 1,
-	HIGH = 2,
-}
-
 enum BloomQuality {
 	DISABLED = 0,
 	LOW = 1,
@@ -27,7 +21,6 @@ enum Resolution {
 }
 
 var aa_quality = AAQuality.AA_2X
-var ssao_quality = SSAOQuality.DISABLED
 var bloom_quality = BloomQuality.HIGH
 var resolution = Resolution.NATIVE
 var fullscreen = true
@@ -56,9 +49,6 @@ func load_settings():
 	if "aa" in d:
 		aa_quality = int(d.aa)
 
-	if "ssao" in d:
-		ssao_quality = int(d.ssao)
-
 	if "bloom" in d:
 		bloom_quality = int(d.bloom)
 
@@ -74,5 +64,5 @@ func save_settings():
 	var error = f.open("user://settings.json", File.WRITE)
 	assert(not error)
 
-	var d = { "aa":aa_quality, "ssao":ssao_quality, "bloom":bloom_quality, "resolution":resolution, "fullscreen":fullscreen }
+	var d = { "aa":aa_quality, "bloom":bloom_quality, "resolution":resolution, "fullscreen":fullscreen }
 	f.store_line(to_json(d))

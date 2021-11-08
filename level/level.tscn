@@ -84,7 +84,7 @@ interior_ambient_color = Color( 0.2, 0.129412, 0.0470588, 1 )
 interior_ambient_contrib = 0.3
 
 [node name="Player" parent="." instance=ExtResource( 6 )]
-transform = Transform( -0.575826, 0, -0.817573, 0, 1, 0, 0.817573, 0, -0.575826, 64.8183, -1.0765, 78.7639 )
+transform = Transform( -0.0819468, 0, -0.996637, 0, 1, 0, 0.996637, 0, -0.0819468, 23.695, -6.302, 6.736 )
 
 [node name="RedRobot1" parent="." instance=ExtResource( 7 )]
 transform = Transform( 0.843905, 0, -0.536493, 0, 1, 0, 0.536493, 0, 0.843905, 71.5907, -6.05686, 46.2736 )

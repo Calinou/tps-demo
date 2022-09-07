@@ -16,11 +16,11 @@ func _ready():
 		# GLES2 fallback only supports ReflectionProbe, not GIProbe.
 		# However, ReflectionProbes don't blend well with environment lighting in GLES2,
 		# so it looks better (and performs better) when ReflectionProbes are also hidden.
-		$GIProbe.hide()
-		if OS.get_current_video_driver() == OS.VIDEO_DRIVER_GLES3:
-			$ReflectionProbes.show()
-		else:
-			$ReflectionProbes.hide()
+#		$GIProbe.hide()
+#		if OS.get_current_video_driver() == OS.VIDEO_DRIVER_GLES3:
+#			$ReflectionProbes.show()
+#		else:
+#			$ReflectionProbes.hide()
 			# Brighten level if falling back to GLES2, as it looks very dark otherwise.
 			# A procedural sky is used to provide ambient and reflected lighting as a fallback.
 			world_environment.environment.background_mode = Environment.BG_SKY

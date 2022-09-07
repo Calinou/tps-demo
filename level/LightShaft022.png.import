@@ -1,0 +1,35 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/LightShaft022.png-a2183c9a9d1479a1b1ba27b2cad58f59.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://level/LightShaft022.png"
+dest_files=[ "res://.import/LightShaft022.png-a2183c9a9d1479a1b1ba27b2cad58f59.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=false
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=true
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
